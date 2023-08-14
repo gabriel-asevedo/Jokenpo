@@ -78,9 +78,13 @@ public class Jokenpo {
 		return sb.toString();
 	}
 
-	public String score() {
+	public String currentScore() {
+		return "\n//// Player   " + playerPoints + " X " + botPoints + "   Bot ////";
+	}
+
+	public String finalScore() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("\n//// Player Points:\t" + playerPoints + " ////");
+		sb.append("\n\n//// Player Points:\t" + playerPoints + " ////");
 		sb.append("\n//// Bot Points:\t" + botPoints + " ////");
 
 		return sb.toString();

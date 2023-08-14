@@ -32,7 +32,7 @@ public class Program {
 				jokenpo.playRound(playerChoice);
 
 				System.out.println(jokenpo.gameResult());
-				System.out.println(jokenpo.score());
+				System.out.println(jokenpo.currentScore());
 				System.out.print("\n" + currentStatus(jokenpo.getPlayerPoints(), jokenpo.getBotPoints()));
 
 				System.out.print("\nWant to play again? ( y / n ): ");
@@ -53,7 +53,7 @@ public class Program {
 			System.out.println("\n\t// An unexpected error occurred, feel free to play again. //\n");
 		} finally {
 			System.out.print("\n\tFinal Score");
-			System.out.println(jokenpo.score());
+			System.out.println(jokenpo.finalScore());
 			System.out.println(finalStatus(jokenpo.getPlayerPoints(), jokenpo.getBotPoints()));
 
 			sc.close();
